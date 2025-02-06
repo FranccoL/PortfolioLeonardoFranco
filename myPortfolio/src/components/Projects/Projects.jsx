@@ -3,7 +3,7 @@ import "./Projects.css";
 function Projects() {
   const projectList = [
     {
-      title: "Nk Lab",
+      title: "Nk Laboratório",
       description: "Site em desenvolvimento",
       preview: "#",
       link: "#"
