@@ -5,8 +5,8 @@ function Projects() {
     {
       title: "Nk Lab",
       description: "Site em desenvolvimento",
-      preview: "https://www.seusite.com",
-      link: "https://www.seusite.com"
+      preview: "#",
+      link: "#"
     },
     {
       title: "Toffa's Coffee",
