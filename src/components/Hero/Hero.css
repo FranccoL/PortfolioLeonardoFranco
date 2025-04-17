@@ -63,3 +63,50 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-gif {
+    width: 180px;
+  }
+}
+
+/* Responsivo para celulares (menos de 600px) */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 560px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-gif {
+    width: 140px;
+    bottom: 10px;
+  }
+}
