@@ -1,22 +1,40 @@
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-  
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  background: transparent;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2rem; 
-  }
-  
-  .nav-item {
-    font-size: 1.800rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: #1EB29C;
-    font-family: "Kaushan Script", serif;
-    font-weight: 400;
+  display: flex;
+  gap: 30px;
+  pointer-events: auto;
+}
 
-  }
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  color: #37dec5;
+}
+
+.header.scrolled {
+  background-color: rgba(28, 155, 139, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  pointer-events: auto;
+  
+}

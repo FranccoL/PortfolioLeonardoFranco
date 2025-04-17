@@ -49,11 +49,6 @@
 }
 
 
-.introduction:hover, .projects:hover, .skills:hover, .interests:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
-}
-
 h2 span {
     font-style: italic;
     color: #1EB29C;
@@ -79,10 +74,6 @@ h2 span {
 }
 
 
-.skills-icons img:hover {
-    transform: scale(1.2); 
-    background-color: #1c9b8b; 
-}
 
 
 .interests-buttons {
