@@ -95,12 +95,18 @@
   align-items: center;
 }
 
+
 /* RESPONSIVO TABLET */
 @media (max-width: 768px) {
+  .social-links {
+    padding: 20px; /* Aumenta o espaçamento interno */
+  }
+
   .social-list {
-    flex-direction: column; 
-    gap: 15px; 
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center; /* Centraliza os botões */
+    gap: 20px;
+    margin-bottom: 60px;
   }
 
   .social-item {
@@ -109,7 +115,7 @@
   }
 
   .social-item:hover {
-    width: 240px; 
+    width: 200px;
   }
 
   .social-icon {
@@ -123,28 +129,36 @@
   }
 }
 
-/* RESPONSIVO CELULAR */
 @media (max-width: 480px) {
+  .social-links {
+    padding: 24px;
+  }
+
   .social-list {
-    flex-direction: column; 
-    gap: 10px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    overflow: visible; /* Garante que nada corte */
   }
 
   .social-item {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px; /* altura realmente aumentada */
+    flex-shrink: 0; 
   }
 
   .social-item:hover {
-    width: 210px; 
+    width: 50vw; 
+  max-width: 200px;
   }
 
   .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .social-label {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 }
