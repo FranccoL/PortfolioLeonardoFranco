@@ -114,7 +114,7 @@
   /* Responsividade */
   @media (max-width: 768px) {
     .projects-grid {
-      grid-template-columns: 1fr; /* 1 card por linha no mobile */
+      grid-template-columns: 1fr;
     }
   
     .project-image {
@@ -125,5 +125,11 @@
       flex-direction: column;
       gap: 10px;
     }
+
+    
+      .project-buttons a,
+      .project-buttons button {
+       font-size: 1rem;
+      }
   }
   
