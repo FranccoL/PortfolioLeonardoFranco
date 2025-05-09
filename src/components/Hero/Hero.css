@@ -65,6 +65,7 @@
 }
 
 @media (max-width: 1024px) {
+
   .hero-content h1 {
     font-size: 4rem;
   }
@@ -82,15 +83,16 @@
   }
 }
 
-/* Responsivo para celulares (menos de 600px) */
+
 @media (max-width: 600px) {
   .hero {
     flex-direction: column;
     margin-top: -50px;
     padding-top: 100px;
     padding-left: 10px;
-    padding-right: 10px;
-    height: 560px;
+    padding-right: -10px;
+    height: 570px;
+    align-items: center;
   }
 
   .hero-content h1 {

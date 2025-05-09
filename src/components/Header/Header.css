@@ -38,3 +38,21 @@
   pointer-events: auto;
   
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .nav-links {
+    
+    gap: 16px;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 18px;
+    white-space: normal;
+    text-align: center;
+  }
+}
