@@ -1,22 +1,27 @@
-import Header from './components/Header/Header'
-import AboutMe from './components/AboutMe/AboutMe'
-import Projects from './components/Projects/Projects'
-import SocialMedia from './components/SocialMedia/SocialMedia'
-import Hero from './components/Hero/Hero'
+import { Toaster } from "@/components/ui/toaster";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClientInstance } from "@/lib/query-client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import PageNotFound from "./lib/PageNotFound";
+
 function App() {
- 
   return (
-    <>
-    
-     <Header />
-     <Hero />
-     
-     <Projects />
-     <AboutMe />
-     <SocialMedia />
-    </>
-  )
+    <QueryClientProvider client={queryClientInstance}>
+      <Router>
+        <ScrollToTop />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+
+        <Toaster />
+      </Router>
+    </QueryClientProvider>
+  );
 }
 
-export default App
- 
+export default App;

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 10% 94%;
+    --foreground: 0 0% 7%;
+    --card: 30 10% 94%;
+    --card-foreground: 0 0% 7%;
+    --popover: 30 10% 94%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 207 33% 35%;
+    --primary-foreground: 30 10% 94%;
+    --secondary: 30 6% 88%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 30 6% 88%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 207 33% 35%;
+    --accent-foreground: 30 10% 94%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 6% 82%;
+    --input: 30 6% 82%;
+    --ring: 207 33% 35%;
+    --chart-1: 207 33% 35%;
+    --chart-2: 207 25% 50%;
+    --chart-3: 207 20% 65%;
+    --chart-4: 30 15% 70%;
+    --chart-5: 30 10% 60%;
+    --radius: 0rem;
+    --font-heading: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Instrument Serif', Georgia, serif;
+    --font-display: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sidebar-background: 30 10% 94%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 207 33% 35%;
+    --sidebar-primary-foreground: 30 10% 94%;
+    --sidebar-accent: 30 6% 88%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 30 6% 82%;
+    --sidebar-ring: 207 33% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  ::selection {
+    background-color: #3E5C76;
+    color: #F2F0ED;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F0ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #3E5C76;
+}
+
+/* Blueprint grid lines */
+.blueprint-line-h {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background: rgba(62, 92, 118, 0.08);
+  pointer-events: none;
+}
+.blueprint-line-v {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.5px;
+  background: rgba(62, 92, 118, 0.08);
+  pointer-events: none;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
